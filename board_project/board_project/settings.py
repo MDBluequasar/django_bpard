@@ -79,8 +79,12 @@ WSGI_APPLICATION = 'board_project.wsgi.application'
 # 전체 프로젝트의 database정보를 아래에서 설정.
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'board',
+        'USER' : 'root',
+        'PASSWORD' : '1234',
+        'HOST' : '127.0.0.1',
+        'PORT' : '3406',
     }
 }
 
