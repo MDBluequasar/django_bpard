@@ -1,16 +1,16 @@
 <html>
     <head>
         <meta chatset ='UTF-8'>
-        <title>지금부터 테스트를 시작해볼까?</title>
+        <title>재미있엉</title>
     </head>
     <body>
-                <!--액선 코딩은 두 views의 코딩을 합쳤을 때 생략가능하다.  -->
-        <form action = 'http://localhost:8000/test_post_handle' method = 'POST'> 
+        <form action = 'http://localhost:8000/test_update' method = 'POST'> 
             {% csrf_token %}
+            id : <input type = 'text' name = 'my_id'><br>
             이름 : <input type = 'text' name = 'my_name'><br>
             이메일 : <input type = 'text' name = 'my_email'><br>
             비밀번호 : <input type = 'text' name = 'my_password'><br>
-            <input type = "submit" value = '회원가입'>
+            <input type = "submit" value = '수정하기'>
         </form>
         
     </body>
